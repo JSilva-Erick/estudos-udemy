@@ -6,7 +6,21 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /*[feira] - pega todos que tem a propriedade feira
+        [feira = casa] - pega o feira escolhido
+        [feira ~= escritorio] - pega o feira que contem 'escritorio' mesmo se possuir mais nomes
+        [feira*=sa] - pega o feira que contem no nome 'sa'
+        p + ul - pega o 'ul' se for 'irmao' logo seguinte do p
+        p ~ ol - pega o próximo 'ol' se for 'irmao', mesmo longe
+        span:nth-child(1) - pega o filho de alguem do tipo span na posição indicada
+        section > :nth-child(even) - pegando os filhos (even - pares, odd- impares)
+        section > span:nth-of-type(2) - pega o próximo do tipo selecionado na posição indicada
+         */
+
+        section > span:nth-of-type(2) {
+            color: #ff0;
+            background-color: #f77;
+        }
     </style>
 </head>
 
