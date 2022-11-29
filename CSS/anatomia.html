@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        .selector {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            /* multiplos valores */
+            border: solid 5px navy;
+            font-family: montserrat, monospace;
+            width: calc(100% - 100px);
+            background-color: rgb(34, 153, 189);
+        }
+
+        /* Usando uma pseudo-classe */
+        /* hover - vai funcionar quando o mouse do cliente estiver por cima da classe */
+        .selector:hover {
+            background-color: orangered;
+        }
+
+        /* Usando um pseudo-elemento */
+        /* precisa de :: */
+        .selector::first-letter{
+            font-size: 60px;
+            font-weight: bold;
+        }
+        /* padrão de nomeclatura? */
+        /* dash-case ou  camelCase?*/
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>
