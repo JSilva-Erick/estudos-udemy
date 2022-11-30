@@ -5,7 +5,40 @@
     <meta charset="UTF-8">
     <title>Unidades #01</title>
     <style>
-        /* ... */
+        /* Absolutos - px, cm, mm
+        Viewport - tamanho visivel da página
+            vh - altura como se fosse porcentagem da tela
+            vw - largura como se fosse porcentagem da tela
+            vmin - menor parte da tela
+            vmax - maior parte da tela
+
+        Font - baseados em tamanho relativo
+            rem - tamanho relativo da raiz
+            em - tamanho relativo da tag pai
+         */
+         .unidades-absolutas {
+            position: absolute;
+            font-size: 40px;
+            padding: 20px;
+            border: solid 5px #222;
+            margin: 30px;
+            width: 4cm;
+            height: 20mm;
+            top: 150px;
+            left: 200px;
+         }
+
+         .unidades-relativas{
+            position: absolute;
+            font-size: 4em;
+            padding: 5%;
+            border: solid 1vh #222;
+            margin: .8%;
+            width: 20vw;
+            height: 15vh;
+            bottom: 5%;
+            right: 5%;
+         }
     </style>
 </head>
 
