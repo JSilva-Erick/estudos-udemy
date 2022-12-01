@@ -7,8 +7,93 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
-    </style>
+        body{
+            margin: 0;
+        }
+        div{
+            background-color: #444;
+            padding: 3px;
+        }
+        header{
+            background-color: rgba(59, 192, 253);
+            width: 100%;
+            height: 60px;
+            padding: 0;
+        }
+        
+        a > img{
+            width: 250px;
+        }
+        
+        .menu , .autenticacao {
+            font-family: Oswald;
+        }
+        
+        .menu{
+            position: absolute;
+            top: 2.5px;
+            left: 250px;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            height: 50px;
+            width: 100%;
+        }
+        
+        li > a:hover{
+            background-color:rgba(59, 192, 253);
+            color: black;
+        }
+
+        ul{
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: auto;
+            text-align: center;
+        }
+        
+        li{
+            display: flex;
+            float: left;
+            width: 100px;
+            font-size: 30px;
+            margin: 0;
+        }
+        
+        .autenticacao{
+            position: absolute;
+            top: 1.5vh;
+            right: 1vh;
+            font-size: 20px;
+        }
+        
+        .menu-toggle{
+            position: absolute;
+            right: 3vh;
+            top: 2vh;
+            display: none;
+        }
+
+        .destaque{
+            background-color: red;
+            padding: 5px 10px;
+            border-radius: 30%;
+        }
+
+        @media (max-width:700px) {
+            .menu-toggle {display: block;}
+        }
+
+        @media (max-width: 850px) {
+            .autenticacao{display: none;}
+        }
+
+        @media (max-width: 700px) {
+            .menu{display: none;}
+        }
+        
+        </style>
 </head>
 
 <body>
